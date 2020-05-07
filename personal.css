@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    text-decoration: none;
+}
+
+/*h1 {
+  color: rgb(59, 153, 184);
+}
+
+h2 {
+  color: rgb(42, 131, 42);
+}
+*/
+
+
+
+html, body{
+  margin:0;
+}
+
+
+.top {
+    background: linear-gradient(to right,white, ghostwhite, grey);
+    overflow:hidden;
+    width: 1490px;
+    height: 70px;
+    position:sticky;
+    top:0px;
+    z-index: 1;
+}
+
+
+.top ul{
+margin:0px;
+
+}
+
+.top li {
+float:left;
+}
+
+.top li a {
+height:70px;
+width:100px;
+display:inline-block;
+color:black;
+text-align:center;
+vertical-align: middle;
+line-height: 70px;
+}
+
+
+.top li a:hover{
+background-color: darkgray;
+transition: 2s;
+}
+
+.identity{
+    color:white;
+    float:right;
+    vertical-align: middle;
+    line-height: 70px;
+    margin-left:5px;
+}
+
+
+.sidenav{
+width:0px;
+height:100%;
+z-index:1;
+top:0;
+left:0;
+margin:0;
+padding:0;
+transition:0.5s;
+overflow-x:hidden;
+text-align:center;
+list-style-type: none;
+position: fixed;
+background-color: black;
+}
+
+.sidenav li a{
+    display:block;
+    color:white;
+    padding: 40px;
+    text-align: center;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+/*for slideshow*/
+
+.container{
+  background-color:white;
+  display:flex;
+  flex-flow:row wrap;
+  color:white;
+  height: 4300px;
+  width: 1490px;
+  align-content:flex-start;
+}
+
+
+.icon{
+  font-size:100px;
+  margin-right:15px;
+  vertical-align: middle;
+}
+
+#intro{
+  color:black;
+  font-size: larger;
+  width:45%;
+  text-align:center;
+  vertical-align: middle;
+  line-height: 70px;
+  margin-left:50px;
+}
+
+.cpics{
+height:750px;
+margin: 0px 100px;
+}
+
+.break{
+  flex-basis:100%;
+}
+
+.lists{
+    width:100%;
+    height:700px;
+    color:black;
+    list-style-type: none;
+    margin: 0px 100px;
+}
+
+
+.lists h1,.lists h2{
+  display: inline-block;
+}
+
+.lists p {
+  float:right;
+  vertical-align: middle;
+  line-height: 20px;
+  width:70%;
+}
+
+
+.lists ul {
+  list-style-type: none;
+}
+
+.lists ul li a {
+  font-size:medium;
+  color:black;
+
+}
+
+.lists i{
+  width:150px;
+  height:100px;
+  font-size:100px;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
+.chead{
+  width:100%;
+  height:100px;
+  color:black;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.chead h1{
+  display:inline;
+  margin-left:50px;
+}
+
+.chead i{
+  font-size:100px;
+  margin-left:275px;
+  margin-right:20px;
+  color:black;
+  vertical-align: middle;
+}
+
+.cols{
+  width: 650px;
+  height: 1500px;
+  color:black;
+}
+
+.cols h1{
+  font-size:22px;
+}
+
+.cols p{
+  margin: 15px 0px;
+}
+
+.epic{
+  height:25%;
+  width:65%;
+  margin-left:150px;
+}
+
+.vpic{
+  height:10%;
+  width:90%;
+  margin-top:50px;
+  margin-left:35px;
+}
+
+.contact{
+  background-image:url("/Pics/contact.jpg");
+  background-position: 80% 50%;
+  background-size:500px;
+  background-repeat: no-repeat;
+  width:100%;
+  height:300px;
+}
+
+.contact_text{
+  width:35%;
+  color:black;
+  text-align:center;
+  margin-left:50px;
+}
+
+.volunteer{
+  background-image: url("/Pics/St_John_Ambulance.jpg"), url("/Pics/liberal-party-of-canada.png");
+  background-position: 85% 90%, 10% 0% ;
+  background-size: 300px;
+  background-repeat: no-repeat, no-repeat;
+  height:600px;
+  width:100%;
+  color:black;
+}
+
+.cvolunteer{
+  width:45%;
+  height:500px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name:fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*end of slide show*/
+
+
+
+.footer{
+    color:white;
+    height: 300px;
+    width: 1490px;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    text-align: center;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  /*to prevent resizing*/
+  .col-75 textarea{
+      resize:none;
+  }
+  /*error message details*/
+  .footer #error_message {
+    margin-bottom: 20px;
+    padding: 0px;
+    background: red;
+    text-align:center;
+    font-size:14px;
+    transition: all 0.5s ease;
+  }
+
+  
+  /* Clear floats after the columns */
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
