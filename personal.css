@@ -4,15 +4,13 @@
     text-decoration: none;
 }
 
-/*h1 {
+h1 {
   color: rgb(59, 153, 184);
 }
 
 h2 {
   color: rgb(42, 131, 42);
 }
-*/
-
 
 
 html, body{
@@ -104,7 +102,7 @@ background-color: black;
   display:flex;
   flex-flow:row wrap;
   color:white;
-  height: 4300px;
+  height: 4350px;
   width: 1490px;
   align-content:flex-start;
 }
@@ -184,14 +182,12 @@ margin: 0px 100px;
 
 .chead h1{
   display:inline;
-  margin-left:50px;
+  margin-left:100px;
 }
 
 .chead i{
   font-size:100px;
-  margin-left:275px;
   margin-right:20px;
-  color:black;
   vertical-align: middle;
 }
 
@@ -201,9 +197,6 @@ margin: 0px 100px;
   color:black;
 }
 
-.cols h1{
-  font-size:22px;
-}
 
 .cols p{
   margin: 15px 0px;
@@ -211,7 +204,7 @@ margin: 0px 100px;
 
 .epic{
   height:25%;
-  width:65%;
+  width:63%;
   margin-left:150px;
 }
 
@@ -229,11 +222,11 @@ margin: 0px 100px;
   background-repeat: no-repeat;
   width:100%;
   height:300px;
+  color:black;
 }
 
 .contact_text{
   width:35%;
-  color:black;
   text-align:center;
   margin-left:50px;
 }
