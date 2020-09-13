@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess website head page</title>
+    <title>Eli Vlahos Online Resume</title>
     <script src="https://kit.fontawesome.com/6f61be6c0e.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href ='personal.css'>
@@ -26,12 +26,12 @@
 
   <div class = "top" >
     <ul style = "list-style-type: none; ">    
-        <li>   <a href = "#" onclick="openNav()" > <i class="fas fa-bars"></i> </a> </li>
-        <li>   <a href = "#" ><i class="fas fa-home"></i></a>     </li>
+        <li>   <a onclick="openNav()" > <i class="fas fa-bars"></i> </a> </li>
+        <!-- <li>   <a href = "#" ><i class="fas fa-home"></i></a>     </li>
         <li>   <a href = "#"><i class="fas fa-chess"></i></a>     </li>
         <li>   <a href = "#"><i class="fas fa-server"></i></a>     </li>
         <li>   <a href = "#"><i class="fas fa-money-bill-alt"></i></a>     </li>   
-        <li>   <a href = "#"><i class="fas fa-hiking"></i></a>     </li>   
+        <li>   <a href = "#"><i class="fas fa-hiking"></i></a>     </li>    -->
     </ul>
 
     <div class = "identity">
@@ -67,11 +67,13 @@
     <div style = "height:140px; width:1490px; background-color:white"></div>
 
     <ul id = "mySidenav" class = "sidenav" >
-      <li> <a href="#" class="closebtn" onclick="closeNav()"> &times;</a> </li>
-      <li> <a href="#">Skills</a> </li>
-      <li> <a href="#">Education</a> </li>
-      <li> <a href="#">Work Experience</a> </li>
-      <li> <a href="#">Volunteer Experience</a> </li>
+      <li> <a class="closebtn" onclick="closeNav()"> &times;</a> </li>
+      <li> <a></a> </li>
+      <li> <a href="#projects">Projects</a> </li>
+      <li> <a href="#profile">Skills</a> </li>
+      <li> <a href="#profile">Education</a> </li>
+      <li> <a href="#workexperience">Work Experience</a> </li>
+      <li> <a href="#volunteerexperience">Volunteer Experience</a> </li>
   </ul>
 
 
@@ -79,12 +81,10 @@
     <div class = "container" >
                 
       <div id="intro" style = "margin-top:0px;" data-aos="fade-down">
-  Hello,
-  <br>
-  My name is Eli Vlahos and this is my personal website. Everything from my personal interests to my professional skills are in the following webpages. My specific interests are in software and finance. 
-  <br> <br>
-  
-  
+      Hello,
+      <br>
+      My name is Eli Vlahos and this is my personal website. Everything from my personal interests to my professional skills are in the following webpages. My specific interests are in software and finance. 
+      <br> <br>
 
       </div>
 
@@ -95,11 +95,11 @@
 
         <div class = "lists">
 
-          <h1 style = "margin-top:70px;" data-aos="fade-down"> Projects</h1>
+          <h1 style = "margin-top:70px;" data-aos="fade-down" id = "projects"> Projects</h1>
           <p style = "margin-top:70px" data-aos="fade-down">
             Each project and personal interest will have its own website. This is in order to better display them and explore different types of web development. <span style = "font-weight:1000" data-aos="fade-down" >Whether:</span></p>
-          
-          <ul >
+
+          <ul>
             <li data-aos="fade-down">
               <h2 data-aos=><i class="fas fa-chess icon"></i>
                 Chess</h2>
@@ -128,7 +128,7 @@
         </div>
         <div class = "break"></div>
       <div class = "chead">
-          <h1 data-aos="fade-down">Profile:</h1>
+          <h1 data-aos="fade-down" id = "profile">Profile:</h1>
               <h1 style = "display:inline; font-size:26px;" data-aos="fade-down"> <i class="far fa-check-square icon" style = "  margin-left:90px;"></i>
               Skills <i class="fas fa-university" style = "margin-left:531px;"></i>   
               Education</h1>
@@ -138,19 +138,41 @@
           </div>
 
           <div class = "cols" style = "margin-left:100px; margin-right: 50px;">
-              <h2 data-aos="fade-down">Programming Languages:</h2> <p data-aos="fade-down">C++, SQL, Javascript, PHP and Python</p>
+              <h2 data-aos="fade-down">Programming Languages:</h2> <p data-aos="fade-down">Front-end: HTML, CSS, Bootstrap,  Javascript (React and Vue)</p>
+              <p data-aos="fade-down">Back-end: Python (Django and Webapp2), C++,  SQL (Postgre)</p>
               <h2 data-aos="fade-down">Python Libraries:</h2> <p data-aos="fade-down">Numpy, Pandas, Matplotlib, Seaborn, Plotly, Scikit-learn</p>
-              <h2 data-aos="fade-down">Other:</h2> <p data-aos="fade-down">HTML, CSS, LaTex, MS Office, Excel, Bootstrap, MacOS, iOS, Windows</p>
+              <h2 data-aos="fade-down">Other:</h2> <p data-aos="fade-down">LaTex, MS Office, Excel, Windows, Git and Github, Mailgun API</p>
               <h2 data-aos="fade-down">Finance:</h2>
                  <p data-aos="fade-down">Fundamental Analysis: applied knowledge of financial statistics, P/E, Current Ratio, P/A, Dividend Rate ect</p>
                  <p data-aos="fade-down">Technical Analysis: applied knowledge of technical indicators, patterns(head and shoulders, triangles), moving averages, oscillators, elliot wave theory </p>
+                 <p data-aos="fade-down">Proficient with fundamental and technical analysis in stock selection; Holistic understanding of economics and financial markets</p>
+                 <p data-aos="fade-down">Experience reading, summarizing and creating financial documents (income statement, balance sheet, cash flow)</p>
               
               <h2 data-aos="fade-down">Bilingual:</h2> <p data-aos="fade-down">French work experience (Army Reserves), DELF B2, French Immersion, exchange to France</p>
-              <h1 style = "margin: 80px 20px 30px 225px; font-size:26px;" data-aos="fade-down">
+              <h1 style = "margin: 80px 20px 30px 225px; font-size:26px;" data-aos="fade-down" id = "workexperience">
               <i class="fas fa-briefcase icon" data-aos="fade-down"></i>
             Work Experience
           </h1>
               <br>
+
+              <h2 style = "text-align:center;display: inline-block; width: 100%;" data-aos="fade-down">Full Stack Developer at Waypoint Golf, 2020</h2>
+
+              <ul style = "list-style-type: circle;">
+
+                <li style = "margin-top:10px;" data-aos="fade-down">
+                  Developed user friendly metrics reporting pages and tools allowing administrative users to more easily perform back end operations
+                </li>
+                <li data-aos="fade-down">
+                  Maintained and continued development of a web app for golf tournament organization management and purchase handling, with full responsibility over all levels of the stack
+                </li>
+                <li data-aos="fade-down">
+                  Deployed development and production server using Google Cloud and FreeBSD OS 
+                </li>
+                <li data-aos="fade-down">
+                  Handled back-end and URI routes with Python and webapp2 to solve a variety of tasks including security, cleaning and presentation of database information and APIs
+                </li>
+                </ul>
+
 
               <h2 style = "text-align:center;display: inline-block; width: 100%;" data-aos="fade-down">Member of the Canadian Armed Forces <br> Intelligence Operator, 2018-2019</h2>
 
@@ -166,14 +188,14 @@
               </li>
               </ul>
               
-              <h2 style="margin-top:30px;" data-aos="fade-down">
+              <!-- <h2 style="margin-top:30px;" data-aos="fade-down">
                 Communications Chair, YLCBC, 2016-2017
               </h2>
               <ul style = "list-style-type:circle;">
                 <li style="margin-top:20px;" data-aos="fade-down">
                   Responsible for Facebook, Twitter, Instagram and blast emails; Coordinated inner executive communication via email, Skype or Facebook
                 </li>
-              </ul>
+              </ul> -->
 
               <h2 style="margin-top:30px;" data-aos="fade-down">
                 Ski Instructor, Silver Star Snowsports School, 2015–2017
@@ -183,13 +205,10 @@
                   Developed excellent written and spoken communication skills through customer service
                 </li>
                 <li data-aos="fade-down">
-                  Taught young children ski skills using visual and oral techniques
-                </li>
-                <li data-aos="fade-down">
-                  CSIA Registered Ski Instructor
+                  Taught young children ski skills using visual and oral techniques; CSIA Registered Ski Instructor
                 </li>
               </ul>
-              <h2 style="margin-top:30px;" data-aos="fade-down">
+              <!-- <h2 style="margin-top:30px;" data-aos="fade-down">
                 Host, Earls Kitchen + Bar, 2016-2017
               </h2>
               <ul style = "list-style-type:circle;">
@@ -205,7 +224,7 @@
                 <li style="margin-top:20px;" data-aos="fade-down">
                   Helping customers find their desired purchase, and providing great customer service with low prices.
                 </li>
-              </ul>
+              </ul> -->
 
 
           </div>
@@ -215,14 +234,13 @@
             <img src="/Pics/eng.jpeg" class = "epic" data-aos="fade-down">
             <h2 style = "text-align: center;" data-aos="fade-down">Bachelor of Applied Science - <br>Honors Electrical Engineering (Co-op)</h2>
             <p style = "text-align: center; margin-top:20px; width:90%; margin-left:40px;" data-aos="fade-down">
-            Getting into the University of Waterloo for Engineering was a privilege. I am thankful to all those that helped me achieve this. <br>
+            Admission into the Eletrical Computer Engineering faculty of the University of Waterloo was a privilege. I am thankful to all those that helped me achieve this. <br>
             <br>
             My favorite courses were those that helped with my foundations in programming. ECE 150 helped establish strong abilities in back end programming. It taught me structured programming theorem, memory management, pointers, classes, inheritance and arrays.
             <br>
             <br>
 
-            Three other courses I especially enjoyed were Calculus 2, Discrete Mathmatics and Economics for Engineers. The two math courses helped establish strong theoratical foundations for applications of mathmatics in finance and machine learning. 
-            <!--Gradient Calculus and probability theory helped an understanding of -->
+            Three other courses I especially enjoyed were Calculus 2, Discrete Mathematics and Economics for Engineers. The two math courses helped establish strong theoretical foundations for applications of mathmatics in finance and machine learning. 
             <br>
             <br>
             Economics for Engineers taught the fundamentals of cash flow and economic analysis for annual, present and future fiscal values. I learned about the rate of return as well as cost benefit and uncertainty analysis. These provided strong fundamentals in money management for projects and investment.
@@ -242,7 +260,7 @@
               <br> 
               <br>
 
-            Besides academic activities, there were many extracurriculars to enjoy. While at Vanier I was in the Philosophy Club and on the electoral committee for the Student ASssociation elections. As a member of the electoral committee, I arranged the student elections for a voting body of 6000 youth. As Vice-President of the Philosophy Club, I organized a religious roundtable event with a representative from every Abrahamic religion. There were over forty participants in discussions that enlightened the student body on the practices of modern religion.
+            Besides academic activities, there were many extracurriculars to enjoy. While at Vanier I was in the Philosophy Club and on the electoral committee for the Student Association elections. As a member of the electoral committee, I arranged the student elections for a voting body of 6000 youth. As Vice-President of the Philosophy Club, I organized a religious roundtable event with a representative from every Abrahamic religion. There were over forty participants in discussions that enlightened the student body on the practices of modern religion.
             </p>
             
           </div>
@@ -250,104 +268,144 @@
 
       <div class = "break"></div>
 
-            <h1 style = "display:inline-block; text-align: center; width:100%; margin-top:100px;" data-aos="fade-down"> <i class="fas fa-hands-helping icon"></i>   
-              Volunteer Experience </h1>
+        <h1 style = "display:inline-block; text-align: center; width:100%; margin-top:100px;" data-aos="fade-down" id = "volunteerexperience"
+        
+        > <i class="fas fa-hands-helping icon"></i>   
+          Volunteer Experience </h1>
 
       
         <div class = "break" ></div>
 
-        <div class = "volunteer" data-aos="fade-down">
-          <div class = "cvolunteer" style = " display:inline-block;">
-          <h2 style = "margin: 200px 0px 0px 85px;text-align:center; width: 370px;" data-aos="fade-down">
-          Liberal Party of Canada
-          </h2>
+        <div id = "fraternity" style = " display:inline-block;" data-aos="fade-down">
 
-          <ul >
+          <div style = "float:right; width: 50%; margin-right: 75px; margin-top: 75px;" data-aos="fade-down" >
+          <h2 data-aos="fade-down" style = "text-align:center;">
+            Theta Psi Chapter of the Sigma Chi fraternity
+            </h2>
 
-            <li data-aos="fade-down">
-              President of North Okanagan-Shuswap Young Liberals 2015-2017
-              <ul >
-               <li data-aos="fade-down"> Organized a fundraiser for Fort McMurray fire victims  ($500)
-              </li>
-              </ul>
-              <ul>
-                <li data-aos="fade-down"> Raised money during Coldest Night of the Year, event for Vernon's homeless ($1100)
-               </li>
-               </ul>
-               <ul>
-                <li data-aos="fade-down">
-                Mobilized over 25 team members for local outreach (phone banking, door knocking)
-              </li>
-              </ul>
+            <ul >
 
-            </li>
-
-            
-          </ul>
-          
-          <ul>
-
-            <li data-aos="fade-down">
-              Youth Representative for Liberal Party of Canada Electoral District Association of North Okanagan-Shuswap
-              <ul>
-               <li data-aos="fade-down"> 
-                 Ran electoral reform town hall at Seaton Secondary for local youth; recorded survey results from over eighty students
-              </li>
-              </ul>
-              <ul>
-                <li data-aos="fade-down"> 
-                   Organized key note speaker events for local politicians (MLAs, local candidates ect)
-               </li>
-               </ul>
-
-            </li>
-
-            
-          </ul>
-        </div>
-
-
-        <div class  = "cvolunteer" style = "float:right; ">
-            <h2 style = "margin: 200px 0px 0px 0px;" data-aos="fade-down">
-              St. John Ambulance
-              </h2>
-    
-              <ul>
-    
-                <li data-aos="fade-down">
-                  Volunteered over 600 hours providing first aid support to local events
+              <li data-aos="fade-down">
+                Theta Psi Chapter of Sigma Chi Fraternity Quaestor 2020-
+                <ul>
+                 <li data-aos="fade-down"> 
+                  Responsible for the organization of chapter’s finance; Worked with Pro Consul and Consul to ensure balanced budget and responsible cash flow; responsible for publishing quarterly financial reports
                 </li>
-                <li data-aos="fade-down">
-                  Obtained HCP certification (Health Care Provider) to serve the community
-                </li>
-                
-                <li data-aos="fade-down">
-                  Completed weekly seminars on drill, dress and first aid procedure as a St. John Ambulance cadet
-                </li>
+                </ul>
+  
+              </li>
 
-              </ul>
+              <li data-aos="fade-down">
+                Theta Psi Chapter of Sigma Chi Fraternity Annotator 2019-
+                <ul>
+                 <li data-aos="fade-down"> 
+                  Responsible for the organization of chapter information, communication and records; Worked with Pro Consul and Consul to guide chapter operation; responsible for publishing weekly minutes
+                </li>
+                </ul>
+  
+              </li>
+  
+              
+            </ul>
 
           </div>
 
         </div>
-        <div class = "break"></div>
-
-        <div class = "contact" data-aos="fade-down">
-          <h1 class = "contact_text" style = "margin-top:80px;" data-aos="fade-down">
-            Don't leave yet!
-          </h1>
-          <p class = "contact_text" data-aos="fade-down">
-            Life is nothing without our shared experiences. Whether you are a propesctive employer, fellow student or future associate, I am always open to meeting new people. To your upper right are my linkedin profile, resume and contact information. If you wish to send a message to me, use the space below. Have a good day and hope to meet you!
-          </p>
 
 
-        </div>
 
+        <div style="background-color:white;">
+          <div class = "volunteer" data-aos="fade-down">
+              <div class = "cvolunteer" style = " display:inline-block;">
+              <h2 style = "margin: 200px 0px 0px 85px;text-align:center; width: 370px;" data-aos="fade-down">
+              Liberal Party of Canada
+              </h2>
+
+              <ul >
+
+                <li data-aos="fade-down">
+                  President of North Okanagan-Shuswap Young Liberals 2015-2017
+                  <ul >
+                  <li data-aos="fade-down"> Organized a fundraiser for Fort McMurray fire victims  ($500)
+                  </li>
+                  </ul>
+                  <ul>
+                    <li data-aos="fade-down"> Raised money during Coldest Night of the Year, event for Vernon's homeless ($1100)
+                  </li>
+                  </ul>
+                  <ul>
+                    <li data-aos="fade-down">
+                    Mobilized over 25 team members for local outreach (phone banking, door knocking)
+                  </li>
+                  </ul>
+
+                </li>
+
+                
+              </ul>
+              
+              <ul>
+
+                <li data-aos="fade-down">
+                  Youth Representative for Liberal Party of Canada Electoral District Association of North Okanagan-Shuswap
+                  <ul>
+                  <li data-aos="fade-down"> 
+                    Ran electoral reform town hall at Seaton Secondary for local youth; recorded survey results from over eighty students
+                  </li>
+                  </ul>
+                  <ul>
+                    <li data-aos="fade-down"> 
+                      Organized key note speaker events for local politicians (MLAs, local candidates ect)
+                  </li>
+                  </ul>
+
+                </li>
+
+                
+              </ul>
+            </div>
+
+
+            <div class  = "cvolunteer" style = "float:right; ">
+                <h2 style = "margin: 200px 0px 0px 0px;" data-aos="fade-down">
+                  St. John Ambulance
+                  </h2>
+        
+                  <ul>
+        
+                    <li data-aos="fade-down">
+                      Volunteered over 600 hours providing first aid support to local events
+                    </li>
+                    <li data-aos="fade-down">
+                      Obtained HCP certification (Health Care Provider) to serve the community
+                    </li>
+                    
+                    <li data-aos="fade-down">
+                      Completed weekly seminars on drill, dress and first aid procedure as a St. John Ambulance cadet
+                    </li>
+
+                  </ul>
+            </div>
+
+          </div>
+
+          <div class = "contact" data-aos="fade-down">
+            <h1 class = "contact_text" style = "margin-top:80px;" data-aos="fade-down">
+              Don't leave yet!
+            </h1>
+            <p class = "contact_text" data-aos="fade-down">
+              Life is nothing without our shared experiences. Whether you are a prospective employer, fellow student or future associate, I am always open to meeting new people. To your upper right are my linkedin profile, resume and contact information. If you wish to send a message to me, use the contact information above. Have a good day and hope to meet you!
+            </p>
+
+
+          </div>
+
+      </div>
     </div>
 
 
 
-<footer class = footer>
+<!-- <footer class = footer>
 
     <div id = "error_message"></div>
     
@@ -392,7 +450,7 @@
         </div>
       </form>
 
-</footer>
+</footer> -->
 
 
 
